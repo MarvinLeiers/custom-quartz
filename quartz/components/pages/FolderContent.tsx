@@ -45,6 +45,7 @@ export default ((opts?: Partial<FolderContentOptions>) => {
         ? fileData.description
         : htmlToJsx(fileData.filePath!, tree)
 
+    /*
     return (
       <div class={classes}>
         <article>
@@ -52,7 +53,7 @@ export default ((opts?: Partial<FolderContentOptions>) => {
         </article>
       </div>
     )
-    /*
+    */
     return (
       <div class={classes}>
         <article>
@@ -73,7 +74,6 @@ export default ((opts?: Partial<FolderContentOptions>) => {
         </div>
       </div>
     )
-     */
   }
 
   FolderContent.css = style + PageList.css
